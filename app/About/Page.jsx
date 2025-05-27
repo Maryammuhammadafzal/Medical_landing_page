@@ -4,21 +4,21 @@ import AboutImage from "../../public/about-image.jpg";
 import { Button } from "@/components/ui/button";
 const AboutPage = () => {
   return (
-    <div className="w-full h-auto my-25 flex flex-col justify-center items-center gap-14">
-      <div className="lg:w-[90%] w-full flex md:flex-row flex-col gap-10 justify-center items-center h-auto">
+    <div className="w-full h-auto my-35 flex flex-col justify-center items-center">
+      <div className="lg:w-[90%] w-full flex md:flex-row flex-col gap-5 justify-center items-center h-auto">
         <div className="img md:w-[50%] h-auto flex justify-center items-center">
           <Card
-            className="flex justify-end flex-col relative items-center bg-cover bg-top-left h-[500px] w-[500px] rounded-none"
+            className="flex justify-end flex-col relative items-center bg-cover bg-top-left xl:h-[600px] xl:w-[600px] h-[500px] w-[500px] rounded-none"
             style={{ backgroundImage: `url(${AboutImage.src})` }}
           >
-            <CardContent className="bg-black/50 absolute bottom-0 left-0 min-h-[100px] text-white p-5 w-full flex flex-col justify-end items-center">
+            <CardContent className="bg-neutral-800 absolute bottom-0 left-0 min-h-[100px] text-white p-5 w-full flex flex-col justify-end items-center">
               <p className="font-semibold text-xl md:text-2xl">
                 “Experience world-class healthcare with a personal touch.”
               </p>
             </CardContent>
           </Card>
         </div>
-        <div className="content w-[50%] h-auto flex flex-col justify-center items-start gap-4">
+        <div className="content md:w-[50%] sm:w-[80%] w-full sm:p-0 px-5 h-auto flex flex-col justify-center items-start gap-4">
           <h2 className="lg:text-5xl md:text-4xl text-3xl font-semibold  text-[#2E8B57]">
             About Us
           </h2>
@@ -33,7 +33,7 @@ const AboutPage = () => {
               <h2 className="lg:text-3xl md:text-2xl text-xl font-semibold  text-[#2E8B57]">
                 Our Mission:
               </h2>
-              <p>
+              <p className="md:text-base sm:text-sm text-xs">
                 To provide high-quality, patient-centered healthcare that
                 enhances the lives of individuals and communities.
               </p>
@@ -42,7 +42,7 @@ const AboutPage = () => {
               <h2 className="lg:text-3xl md:text-2xl text-xl font-semibold  text-[#2E8B57]">
                 Our Vision:
               </h2>
-              <p>
+              <p className="md:text-base sm:text-sm text-xs">
                 To be a trusted healthcare partner known for innovation,
                 excellence, and compassion.
               </p>
