@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 const HomePage = () => {
   return (
     <div
-      className="w-full h-screen  bg-cover  bg-top-right bg-no-repeat"
+      className="w-full h-screen  bg-cover max-md:bg-center  bg-top-right bg-no-repeat"
       style={{ backgroundImage: `url(${HeroImage.src})` }}
     >
       <div className="w-full md:h-[90px] h-auto md:py-0 py-5 bg-[#333333] fixed top-0 left-0 shadow-md z-50">

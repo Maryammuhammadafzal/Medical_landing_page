@@ -7,14 +7,14 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { CiFacebook , CiLinkedin , CiInstagram } from "react-icons/ci";
 const Footer = () => {
   return (
-    <footer className="w-full h-auto my-10 flex justify-start items-center">
-      <div className="w-full md:w-[85%] h-auto flex justify-center items-center flex-col gap-6">
-        <div className="w-full flex items-start justify-start gap-4">
-          <div className="content flex gap-2 flex-col h-auto lg:w-[25%]">
+    <footer className="w-full h-auto my-10 flex justify-center items-center">
+      <div className="w-full md:w-[85%] md:p-0 px-3 h-auto flex justify-center items-center flex-col gap-10">
+        <div className="w-full flex items-start justify-start max-lg:gap-20 max-lg:flex-wrap lg:gap-22 xl:gap-30">
+          <div className="content flex gap-4 flex-col h-auto max-lg:w-auto lg:w-[35%]">
             <div className="logo w-auto h-auto">
-              <Image src={Logo} alt="Logo" className="max-w-[500px]" />
+              <Image src={Logo} alt="Logo" className="min-w-[250px]" />
             </div>
-            <p className="md:text-lg sm:text-base text-sm">
+            <p className=" md:text-base sm:text-sm text-sm">
               At [Website Name], we are dedicated to delivering exceptional
               medical care and services tailored to meet your unique needs. Our
               team of highly skilled professionals and state-of-the-art
@@ -22,11 +22,11 @@ const Footer = () => {
               care.
             </p>
           </div>
-          <div className="flex flex-col lg:w-[25%] h-autogap-2">
-            <h3 className="lg:text-3xl md:text-2xl sm:text-xl xs:text-lg text-base font-semibold text-[#2E8B57]">
+          <div className="flex flex-col lg:w-auto h-auto gap-2 ">
+            <h3 className="lg:text-2xl md:text-xl sm:text-lg xs:text-base text-sm font-semibold text-[#2E8B57]">
               Quick Links{" "}
             </h3>
-            <ul className="w-full h-auto flex flex-col gap-1 md:text-base text-sm">
+            <ul className="w-full h-auto flex flex-col gap-1 md:text-base text-sm ">
               <li className="cursor-pointer">
                 <a
                   href="/"
@@ -78,7 +78,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="newsletter flex flex-col gap-2">
-            <h3 className="lg:text-3xl md:text-2xl sm:text-xl xs:text-lg text-base font-semibold text-[#2E8B57]">
+            <h3 className="lg:text-2xl md:text-xl sm:text-lg xs:text-base text-sm font-semibold text-[#2E8B57]">
               NewsLetter{" "}
             </h3>
             <div className="flex flex-col gap-5 text-neutral-500 font-medium">
