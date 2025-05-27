@@ -6,9 +6,9 @@ const AboutPage = () => {
   return (
     <div className="w-full h-auto my-35 flex flex-col justify-center items-center">
       <div className="lg:w-[90%] w-full flex md:flex-row flex-col gap-5 justify-center items-center h-auto">
-        <div className="img md:w-[50%] h-auto flex justify-center items-center">
+        <div className="img md:w-[50%] w-full sm:px-0 px-3 h-auto flex justify-center items-center">
           <Card
-            className="flex justify-end flex-col relative items-center bg-cover bg-top-left xl:h-[600px] xl:w-[600px] h-[500px] w-[500px] rounded-none"
+            className="flex justify-end flex-col relative items-center bg-cover bg-top-left xl:h-[600px] max-sm:w-full xl:w-[600px] h-[500px] w-[500px] rounded-none"
             style={{ backgroundImage: `url(${AboutImage.src})` }}
           >
             <CardContent className="bg-neutral-800 absolute bottom-0 left-0 min-h-[100px] text-white p-5 w-full flex flex-col justify-end items-center">
